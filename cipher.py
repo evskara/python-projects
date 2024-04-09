@@ -5,7 +5,7 @@ alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
 ciphertext = ''
 
 print("Please enter the text you want to encrypt.")
-plaintext = input()
+plaintext = input().lower()
 print("And please enter the key (how far you want the alphabet to be shifted).")
 key = int(input())
 
