@@ -1,5 +1,3 @@
-# add support for punctuation
-
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
 ciphertext = ''
@@ -10,8 +8,8 @@ print("And please enter the key (how far you want the alphabet to be shifted).")
 key = int(input())
 
 for character in plaintext:
-    if character == " ":
-        newletter = " "
+    if character not in alphabet:
+        newletter = character
         ciphertext = ciphertext + newletter
     else:
         position = alphabet.index(character)
