@@ -49,18 +49,18 @@ def calc():
     time.sleep(1.75)
     print("What would you like to do? Type A to add, S to subtract, M to multiply and D to divide.")
     ans = input()
-    if ans == "A" or ans == "a":
+    if ans.upper() == "A":
         add_two_ints()
-    elif ans == "S" or ans == "s":
+    elif ans.upper() == "S":
         sub_two_ints()
-    elif ans == "M" or ans == "m":
+    elif ans.upper() == "M":
         mult_two_ints()
-    elif ans == "D" or ans == "d":
+    elif ans.upper() == "D":
         print("Would you like your answer as a decimal or an integer with remainders? Type D for decimal, and R for remainder.")
         ans2 = input()
-        if ans2 == "D" or ans2 == "d":
+        if ans2.upper() == "D":
             decimaldiv_two_ints()
-        elif ans2 == "R" or ans2 == "r":
+        elif ans2.upper() == "R":
             remdiv_two_ints()
         else:
             print("That's not an option.")
